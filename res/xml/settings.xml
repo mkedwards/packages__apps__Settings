@@ -20,6 +20,8 @@
     android:title="@string/settings_label"
     android:key="parent">
 
+        <!-- Wireless -->
+
         <com.android.settings.IconPreferenceScreen
             android:title="@string/radio_controls_title"
             settings:icon="@drawable/ic_settings_wireless">
@@ -28,6 +30,19 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.WirelessSettings" />
         </com.android.settings.IconPreferenceScreen>
+
+        <!-- Ethernet -->
+
+        <com.android.settings.IconPreferenceScreen
+            android:title="@string/eth_radio_ctrl_title"
+            settings:icon="@drawable/ic_settings_ethernet">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.EthernetSettings" />
+        </com.android.settings.IconPreferenceScreen>
+
+        <!-- Call -->
 
         <com.android.settings.IconPreferenceScreen
             android:key="call_settings"
